@@ -24,9 +24,7 @@ fun main() {
     terminal1.transferCredits(card1, card2) // transfer credits from card1 to card2
     terminal1.transferTickets(card1, card2) // transfer tickets from card1 to card2
     println("\n\n>>> Request prize Candy with Classes.Card #2...")
-    println("DEBUG:: "+card2.ticketBalance+" Tickets remaining")
     terminal1.requestPrize("Candy", card2) // request Candy with card2. may or may not be claimed.
-    println("DEBUG:: "+card2.ticketBalance+" Tickets remaining")
     println("\n\n>>> Classes.Card #1 is used to play Classes.Game #1 one more time...")
     game1.play(card1) // try to play game1 again with card1
     println("\n\n>>> Request different prizes with Card #1 and Card #2...")
